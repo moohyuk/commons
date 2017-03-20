@@ -1,2 +1,6 @@
 /ryan-commons.log
 /target/
+/.project
+/.factorypath
+/.settings
+/.classpath
