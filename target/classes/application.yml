@@ -1,0 +1,56 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# Ryan Commons Test Server
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+# ===================================================================
+# WEB PROPERTIES
+# ===================================================================
+
+# SET TOMCAT
+server:
+  port: 8070
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: /ryan-commons/access-log
+      pattern: "%t %s \"%r\" %b (%Dms)"
+
+
+logging:
+  file: ryan-commons.log
+
+# ===================================================================
+# DATA PROPERTIES
+# ===================================================================
+
+# SET JPA DATASOURCE
+spring:
+  application:
+    name: CommonsApplication
+  jpa:
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+    show-sql: true
+    properties: 
+      hibernate.format_sql: true
+      
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:~/ryan_commons;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    tomcat:
+      validation-query: select 1
+    
+    
+    
+      
