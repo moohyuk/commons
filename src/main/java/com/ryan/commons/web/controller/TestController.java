@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class TestController {
 
-	@RequestMapping("/")
+	@RequestMapping("")
 	public void testInit(){
 		System.out.println("Test init... ");
 	}
