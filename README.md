@@ -1,6 +1,6 @@
 # Ryan Common Modules
 > Spring Boot + SpringData JPA
-- application.yml
+### - application.yml
 ```yml
 # SET TOMCAT
 server:
@@ -37,7 +37,7 @@ spring:
 ```
 
 ## Mail Configuration
-- application.yml
+### - application.yml
 ```yml
 mail:
   host: smtp.gmail.com
