@@ -4,7 +4,7 @@
 
 # Mail Configuration
 ○ properties.yml
-yml
+```yml
 mail:
   host: smtp.gmail.com
   port: 587
@@ -15,4 +15,4 @@ mail:
   smtp:
     start-tls-enable: true
     auth: true
-
+```
