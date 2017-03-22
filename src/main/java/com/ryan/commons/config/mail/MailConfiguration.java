@@ -11,7 +11,7 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 @Configuration
 @ConfigurationProperties(prefix = "mail")
-@EnableConfigurationProperties(value = {SmtpPropertyNotUse.class})
+//@EnableConfigurationProperties(value = {SmtpPropertyNotUse.class})
 public class MailConfiguration {
 	
 //	private static final String MAIL_DEBUG = "mail.debug";
