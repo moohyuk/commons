@@ -3,7 +3,6 @@ package com.ryan.commons.config.mail;
 import java.util.Properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -11,7 +10,6 @@ import org.springframework.mail.javamail.JavaMailSenderImpl;
 
 @Configuration
 @ConfigurationProperties(prefix = "mail")
-//@EnableConfigurationProperties(value = {SmtpPropertyNotUse.class})
 public class MailConfiguration {
 	
 //	private static final String MAIL_DEBUG = "mail.debug";

@@ -4,6 +4,8 @@ import org.springframework.mail.SimpleMailMessage;
 
 public class CustomMailMessage extends SimpleMailMessage {
 
+	private static final long serialVersionUID = -3995515888127959167L;
+
 	private SimpleMailMessage message; 
 	private String mailTo;
 	private String mailFrom; 

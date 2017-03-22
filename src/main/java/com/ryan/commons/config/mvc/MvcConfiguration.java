@@ -103,6 +103,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter {
 	/**
 	 * Pebble Extention
 	 */
+	@SuppressWarnings("rawtypes")
 	@Bean
 	public Loader templatePebbleLoader() {
 		return new ServletLoader(servletContext);
