@@ -1,4 +1,4 @@
-package com.ryan.commons.config.datasource;
+package com.ryan.commons.config;
 
 import org.h2.server.web.WebServlet;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
