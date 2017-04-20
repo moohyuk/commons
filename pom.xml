@@ -170,6 +170,12 @@
         	<artifactId>spring-boot-starter-mail</artifactId>        
     	</dependency>
 		
+		<!-- Cache -->
+		<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+		</dependency>
+		
 		<!-- Test -->
 		<dependency>
 			<groupId>com.h2database</groupId>
